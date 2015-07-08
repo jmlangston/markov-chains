@@ -39,21 +39,19 @@ def make_chains(corpus):
 
     return dict_tuples
 
-make_chains(opened_file)
+dictionary = make_chains(opened_file)
 
 # dictionary = make_chains(opened_file)
 # print dictionary    
 
-def make_text(dict_tuples):
+def make_text(dictionary_tuples):
     """Takes dictionary of markov chains; returns random text."""
-    # make_chains(opened_file) 
-    # http://stackoverflow.com/questions/16043797/python-passing-variables-between-functions
-    print dict_tuples
+    print dictionary_tuples
     # random.sample(make_chains(opened_file),1)
 
     # return "Here's some random text."
 
-make_text(dict_tuples)
+make_text(dictionary)
 
 # Change this to read input_text from a file, deciding which file should
 # be used by examining the `sys.argv` arguments (if neccessary, see the
