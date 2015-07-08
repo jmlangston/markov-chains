@@ -44,10 +44,22 @@ dictionary = make_chains(opened_file)
 # dictionary = make_chains(opened_file)
 # print dictionary    
 
-def make_text(dictionary_tuples):
+def make_text(dictionaryv2):
     """Takes dictionary of markov chains; returns random text."""
-    print dictionary_tuples
-    # random.sample(make_chains(opened_file),1)
+    our_string = ""
+    for index in dictionaryv2: 
+        random_key = random.choice(dictionaryv2.keys())
+        print random_key
+        value2 = dictionaryv2[random_key]
+        random_value = random.choice(value2)
+        print random_value
+        new_key = (random_key[1], random_value)
+        print new_key
+        new_value = random.choice(new_key)
+        our_string = our_string + random_key[0] + random_key[1] + new_value
+
+    if new_key not in dictionaryv2:
+        False
 
     # return "Here's some random text."
 
