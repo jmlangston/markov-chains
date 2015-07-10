@@ -1,5 +1,5 @@
 import sys
-import random
+import random 
 
 opened_file = open('green-eggs.txt')
 
@@ -47,12 +47,12 @@ make_text(dictionary)
 # be used by examining the `sys.argv` arguments (if neccessary, see the
 # Python docs for sys.argv)
 
-input_text = "Some text"
+# input_text = "Some text"
 
-# Get a Markov chain
-chain_dict = make_chains(input_text)
+# # Get a Markov chain
+# chain_dict = make_chains(input_text)
 
-# Produce random text
-random_text = make_text(chain_dict)
+# # Produce random text
+# random_text = make_text(chain_dict)
 
-print random_texts
+# print random_texts
